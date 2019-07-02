@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: serif;
+    background-color: aqua;
+  }
+  h1{
+    font-family: 'DM Serif Display', serif;
+    font-size: 75px;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+  }
+
+  li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+
+  li a:hover {
+    background-color: #555;
+    color: white;
+  }
+
+  p {
+      color: tan;
+    }
+  
+  .paragraph1 {
+      font-size: 18px;
+       }
+  
+  .quote1 {
+         font-family: Rockwell; 
+       }
+  
+  #more {display: none;}
+  

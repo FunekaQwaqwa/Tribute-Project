@@ -3,6 +3,9 @@
    <head>
      <meta charset="utf-8">
      <title>Tribute Project</title>
+     <link rel="stylesheet" type="text/css" href="styles.css">
+     <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display&display=swap" rel="stylesheet">
+     
    </head>
 
    <body>
@@ -26,33 +29,58 @@
       <h1>MAMA AFRICA</h1>
       <p><i>"I believe I can sing anything"</i></p>
 
-      <img src="images/profile.jpg" alt="Miriam Makeba">
-      <p>Miriam Makeba, affectionately known as “Mama Africa,” was a South African singer and civil rights activist who introduced Xhosa and Zulu songs to Western audiences.</p>
-      <p><i>“I’m not a political singer. I don’t know what the word means. People think I consciously decided to tell the world what was happening in South Africa… No! I was singing about my life, and in South Africa we always sang about what was happening to us – especially the things that hurt us…”</i></p>
+      <section>
+         <img src="images/profile.jpg" alt="Miriam Makeba">
+         <p>Miriam Makeba, affectionately known as “Mama Africa,” was a South African singer and civil rights activist who introduced Xhosa and Zulu songs to Western audiences.</p>
+         <p><i>“I’m not a political singer. I don’t know what the word means. People think I consciously decided to tell the world what was happening in South Africa… No! I was singing about my life, and in South Africa we always sang about what was happening to us – especially the things that hurt us…”</i></p>
+   
+         <p id="early life">Early Life - Zenzile Miriam Makeba was born on 4 March 1932 in Johannesburg. From a young age, Makeba loved to sing at church, and performed her first solo during the 1947 Royal Visit. She began singing professionally in the 1950s, with the Cuban Brothers, then the Manhattan Brothers, and later an all-woman group, the Skylarks Makeba’s appearances in the films Come Back Africa (1957) and King Kong (1959) cemented her reputation in the music industry both locally and abroad. She was exiled in 1960 from South Africa because of her music and her strong beliefs against the apartheid regime. As a result, she was not able to attend her mother’s funeral.</p>
+         <img src="images/early life.jpg" alt="Young Miriam">
+   
+         <p id="exile & activism">Life in exile & activism - Makeba, with the help of Harry Belafonte, moved and settled in the United States. She recorded her first solo album in 1960 and became immediately popular, even singing at President John F. Kennedy’s 45th birthday celebration in 1962. In 1963, she testified about apartheid at the United Nations leading to her South African citizenship being revoked and her records banned in South Africa. She married civil rights activist Stokely Carmichael in 1968 (separated 1978) but harassment from the US government forced them to move to Guinea.
+            <span id="dots">...</span><span id="more">
+             She found work outside of the US touring Europe, South America and Africa in the 1970s and 1980s. In the 1980s she lost her daughter, Bongi and battled with alcohol abuse, and cervical cancer. In the mid-1980s, she joined Paul Simon’s history-making Graceland tour. After which she was in great demand, and went on to perform for heads of state, and even the Pope. Persuaded by Nelson Mandela Makeba returned to South Africa after living in exile for 31 years. She became a goodwill ambassador for South Africa to the United Nations. Makeba died in 2008, at the age 76, after having a of a heart attack after a 30 minute performance at a concert for Roberto Saviano in Italy.
+            </span></p>
+          <button onclick="myFunction()" id="myBtn">Read more</button>
 
-      <p id="early life">Early Life - Zenzile Miriam Makeba was born on 4 March 1932 in Johannesburg. From a young age, Makeba loved to sing at church, and performed her first solo during the 1947 Royal Visit. She began singing professionally in the 1950s, with the Cuban Brothers, then the Manhattan Brothers, and later an all-woman group, the Skylarks Makeba’s appearances in the films Come Back Africa (1957) and King Kong (1959) cemented her reputation in the music industry both locally and abroad. She was exiled in 1960 from South Africa because of her music and her strong beliefs against the apartheid regime. As a result, she was not able to attend her mother’s funeral.</p>
-      <img src="images/early life.jpg" alt="Young Miriam">
+          <script>
+               function myFunction() {
+                 var dots = document.getElementById("dots");
+                 var moreText = document.getElementById("more");
+                 var btnText = document.getElementById("myBtn");
+               
+                 if (dots.style.display === "none") {
+                   dots.style.display = "inline";
+                   btnText.innerHTML = "Read more"; 
+                   moreText.style.display = "none";
+                 } else {
+                   dots.style.display = "none";
+                   btnText.innerHTML = "Read less"; 
+                   moreText.style.display = "inline";
+                 }
+               }
+               </script>
 
-      <p id="exile & activism">Life in exile & activism - Makeba, with the help of Harry Belafonte, moved and settled in the United States. She recorded her first solo album in 1960 and became immediately popular, even singing at President John F. Kennedy’s 45th birthday celebration in 1962. In 1963, she testified about apartheid at the United Nations leading to her South African citizenship being revoked and her records banned in South Africa. She married civil rights activist Stokely Carmichael in 1968 (separated 1978) but harassment from the US government forced them to move to Guinea. She found work outside of the US touring Europe, South America and Africa in the 1970s and 1980s. In the 1980s she lost her daughter, Bongi and battled with alcohol abuse, and cervical cancer. In the mid-1980s, she joined Paul Simon’s history-making Graceland tour. After which she was in great demand, and went on to perform for heads of state, and even the Pope. Persuaded by Nelson Mandela Makeba returned to South Africa after living in exile for 31 years. She became a goodwill ambassador for South Africa to the United Nations. Makeba died in 2008, at the age 76, after having a of a heart attack after a 30 minute performance at a concert for Roberto Saviano in Italy.</p>
-      <p> 
-      <br><br><i>"I kept my culture. I kept the music of my roots. Through my music I became this voice and image of Africa and the people without even realising,"Miriam Makeba (2004)</i></p>
+         <br><br><i>"I kept my culture. I kept the music of my roots. Through my music I became this voice and image of Africa and the people without even realising,"Miriam Makeba (2004)</i></p>
+      </section>
+
+         <img src="images/bottom 1.jpg" alt="Mirian singing"> <img src="images/bottom 2.jpg" alt="Miriam smile"> <img src="images/bottom 3.jpg" alt="Miriam with Mandela">
+         <p> For further information: <a href="https://en.wikipedia.org/wiki/Miriam_Makeba" target="_blank">Wikipedia</a> <a href="https://www.sahistory.org.za/people/miriam-makeba" target="_blank">SA History</a></p>
       
-      <img src="images/bottom 1.jpg" alt="Mirian singing"> <img src="images/bottom 2.jpg" alt="Miriam smile"> <img src="images/bottom 3.jpg" alt="Miriam with Mandela">
-      <p> For further information: <a href="https://en.wikipedia.org/wiki/Miriam_Makeba" target="_blank">Wikipedia</a> <a href="https://www.sahistory.org.za/people/miriam-makeba" target="_blank">SA History</a></p>
-
+      
       <div class="container" id="achievements">
           <p>“first black woman to have a Top-Ten worldwide hit with Pata Pata”</p>
           <ul>
-            <li>Awards</li>
+            <li><b>Awards</b></li> 
                <p>Grammy for Best Folk Recording <i>1965</i></p> 
                <p>Dag Hammerskjold Peace Prize <i>1986</i></p>
                <p>Presidential Award (by Mandela) <i>1999</i></p>  
-            <li>Notable songs</li>
+            <li><b>Notable songs</b></li>
                <p>Lovely Lies <i>1956</i></p> 
                <p>Laku Tshoni Ilanga <i>1953</i></p>
                <p>Pata Pata <i>1967</i></p>
                <p>Qongqothwane <i></i></p>
-            <li>Appearances</li>
+            <li><b>Appearances</b></li>
                <p>Come back Africa <i>1957</i></p> 
                <p>King Kong <i>1959</i></p>
                <p>Sarafina <i>1992</i></p>
